@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hey Traveler!</title>
+    <link rel="stylesheet" href="dist/styles.css">
+</head>
+
+<body ng-controller="controller">
+  <section class="main">
+<ui-view></ui-view>
+		<a ui-sref="atlanta"><h2>Atlanta</h2></a>
+
+    		<a ui-sref="saltlake"><h2>Salt Lake City</h2></a>
+
+            		<a ui-sref="berlin"><h2>Berlin</h2></a>
+
+                            		<a ui-sref="tokyo"><h2>Tokyo</h2></a>
+
+                                	<a ui-sref="capetown"><h2>Cape Town</h2></a>
+
+
+        <br>
+        <br>
+<img src="/travel-04.jpg" alt="" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+    <script src="js-main/app.js"></script>
+    <script src="js-main/controller.js"></script>
+    <script src="js-main/service.js"></script>
+
+      </section>
+
+</body>
+
+</html>
