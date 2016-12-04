@@ -1,29 +1,29 @@
-angular.module("app").controller("controller", function($scope, service, serviceBerlin, serviceTokyo){
+angular.module("app").controller("controller", function($scope, serviceAtlanta, serviceBerlin, serviceTokyo, serviceCapeTown, serviceSaltLakeCity){
 
-    $scope.getInfo = function() {
-    service.getInfo().then(function(dataFromService) {
+    $scope.getInfoAtlanta = function() {
+    serviceAtlanta.getInfoAtlanta().then(function(dataFromService) {
         console.log(dataFromService);
 
 
-        $scope.housing = dataFromService.categories[0];
-        console.log($scope.housing);
+        $scope.housingAtlanta = dataFromService.categories[0];
+        console.log($scope.housingAtlanta);
 
-        $scope.costOfLiving = dataFromService.categories[1];
-        console.log($scope.cost0fLiving);
-
-
-        $scope.startups = dataFromService.categories[2];
-        console.log($scope.startups);
+        $scope.costOfLivingAtlanta = dataFromService.categories[1];
+        console.log($scope.cost0fLivingAtlanta);
 
 
-      $scope.ventureCapital = dataFromService.categories[3];
-      console.log($scope.ventureCapital);
+        $scope.startupsAtlanta = dataFromService.categories[2];
+        console.log($scope.startupsAtlanta);
+
+
+      $scope.ventureCapitalAtlanta = dataFromService.categories[3];
+      console.log($scope.ventureCapitalAtlanta);
 
       });
     };
 
 
-  $scope.getInfo();
+  $scope.getInfoAtlanta();
 
       $scope.getInfoBerlin = function() {
       serviceBerlin.getInfoBerlin().then(function(dataFromService) {
@@ -69,13 +69,62 @@ angular.module("app").controller("controller", function($scope, service, service
       $scope.ventureCapitalTokyo = dataFromService.categories[3];
       console.log($scope.ventureCapitalTokyo);
 
-      });
-    };
+    });
+  };
 
 
     $scope.getInfoTokyo();
 
+    $scope.getInfoCapeTown = function() {
+    serviceCapeTown.getInfoCapeTown().then(function(dataFromService) {
+        console.log(dataFromService);
 
+
+        $scope.housingCapeTown = dataFromService.categories[0];
+        console.log($scope.housingCapeTown);
+
+        $scope.costOfLivingCapeTown = dataFromService.categories[1];
+        console.log($scope.cost0fLivingCapeTown);
+
+
+        $scope.startupsTCapeTown = dataFromService.categories[2];
+        console.log($scope.startupsTCapeTown);
+
+
+      $scope.ventureCapitalCapeTown = dataFromService.categories[3];
+        console.log($scope.ventureCapitalCapeTown);
+
+      });
+    };
+
+
+    $scope.getInfoCapeTown();
+
+
+    $scope.getInfoSaltLakeCity = function() {
+    serviceSaltLakeCity.getInfoSaltLakeCity().then(function(dataFromService) {
+        console.log(dataFromService);
+
+
+        $scope.housingSaltLakeCity = dataFromService.categories[0];
+        console.log($scope.housingSaltLakeCity);
+
+        $scope.costOfLivingSaltLakeCity= dataFromService.categories[1];
+        console.log($scope.cost0fLivingSaltLakeCity);
+
+
+        $scope.startupsSaltLakeCity = dataFromService.categories[2];
+        console.log($scope.startupsSaltLakeCity);
+
+
+      $scope.ventureCapitalSaltLakeCity= dataFromService.categories[3];
+        console.log($scope.ventureCapitalSaltLakeCity);
+
+      });
+    };
+
+
+    $scope.getInfoSaltLakeCity();
 
 
   });
