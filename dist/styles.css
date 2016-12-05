@@ -1,7 +1,32 @@
 h1 {
-  font-color: #e2f2ff; }
+  font-family: sans-serif;
+  color: #2374b2; }
 
+h1 {
+  font-family: sans-serif;
+  color: #2374b2; }
 
+h1 {
+  font-family: sans-serif;
+  color: #2374b2; }
+
+h1 {
+  font-family: sans-serif;
+  color: #2374b2; }
+
+a:link, a:visited {
+  background-color: #8f9cea;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 10px; }
+
+a:hover, a:active {
+  background-color: #8f9cea;
+  border: 15px;
+  padding: 14px 25px; }
 
 body {
   background-color: #e2f2ff;
