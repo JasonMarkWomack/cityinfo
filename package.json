@@ -21,6 +21,7 @@
     "gulp-uglify": "^2.0.0"
   },
   "devDependencies": {
+    "cachebust": "^2.0.1",
     "gulp-cachebust": "0.0.6",
     "gulp-concat": "^2.6.1",
     "gulp-print": "^2.0.1",
