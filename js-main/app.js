@@ -3,13 +3,18 @@ angular.module("app", ['ui.router'])
 
 .config(function($urlRouterProvider, $stateProvider){
   $stateProvider
-  .state('/',{
-    templateUrl: '/one/index.html',
-    url: '/'
+
+
+
+
+  .state('seeall',{
+    templateUrl: '/html/seeall.html',
+    url: '/seeall'
 
 
 
   })
+
 
 
   .state('atlanta',{
@@ -40,7 +45,6 @@ angular.module("app", ['ui.router'])
     templateUrl: '/html/capetown.html',
     url: '/capetown'
 
-  });
-
+  })
 
 });

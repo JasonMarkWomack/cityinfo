@@ -3,7 +3,6 @@ h1 {
 
 
 
-
 body {
   background-color: #e2f2ff;
   text-align: center; }
@@ -17,5 +16,8 @@ img {
   width: 30%;
   height: 30%; }
 
+h1 {
+  font-family: sans-serif;
+  color: #2374b2; }
 
 /*# sourceMappingURL=maps/styles.css.map */
