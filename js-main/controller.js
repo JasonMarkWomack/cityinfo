@@ -127,4 +127,5 @@ angular.module("app").controller("controller", function($scope, serviceAtlanta, 
     $scope.getInfoSaltLakeCity();
 
 
+
   });

@@ -23,3 +23,27 @@
 <br>
 <br>
 <img src="/pics/slc.jpg" alt="" />
+<br>
+<section>
+
+<form>
+  Was this helpful?
+  <input type="radio" ng-model="myVar" value="yes">Yes
+  <input type="radio" ng-model="myVar" value="no">No
+</form>
+
+<div ng-switch="myVar">
+  <div ng-switch-when="yes">
+     <h1>Yes</h1>
+     <p>That's great!</p>
+  </div>
+</div>
+  <div <div ng-switch="myVar">
+  <div ng-switch-when="no">
+     <h1>No</h1>
+     <p>We will work on it!</p>
+  </div>
+</div>
+
+</section>
+<br>

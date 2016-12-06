@@ -24,6 +24,7 @@
     "cachebust": "^2.0.1",
     "gulp-cachebust": "0.0.6",
     "gulp-concat": "^2.6.1",
+    "gulp-dest": "^0.2.3",
     "gulp-print": "^2.0.1",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^2.2.1"

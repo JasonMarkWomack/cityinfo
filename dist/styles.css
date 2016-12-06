@@ -23,10 +23,8 @@ a:link, a:visited {
   display: inline-block;
   border: 10px; }
 
-a:hover, a:active {
-  background-color: #8f9cea;
-  border: 15px;
-  padding: 14px 25px; }
+.home-btn:hover {
+  background-color: #7082ea; }
 
 body {
   background-color: #e2f2ff;
